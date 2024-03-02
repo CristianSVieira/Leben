@@ -25,8 +25,15 @@ public class QuadroTemporalDrawable : IDrawable {
 
     public void Draw(ICanvas canvas, RectF dirtyRect) {
         canvas.SaveState();
-        canvas.FillColor = Colors.DarkBlue;
-        canvas.FillRectangle(10, 10, 100, 50);
+
+        for (int i = 0; i <= columnas; i++) {
+            canvas.FillColor = _quadroTemporalModel[i].Côr;
+            canvas.FillRectangle(50 / (float) totalDeElementos * i, 50 / (float) totalDeElementos * i, 100 / (float) totalDeElementos, 100 / (float) totalDeElementos);
+        }
+
+        canvas.FillColor = Colors.White;
+        //canvas.FillRectangle(50, 50, 100, 100);
+
         canvas.RestoreState();
     }
 }
