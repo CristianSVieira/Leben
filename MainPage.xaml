@@ -33,7 +33,7 @@
                                     Offset="0.5" />
                     </LinearGradientBrush>
                 </Frame.Background>
-            </Frame>     
+            </Frame>
         </StackLayout>
-	
+
 </ContentPage>
