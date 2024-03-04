@@ -5,12 +5,14 @@
     x:Class="Leben.Controls.QuadroTemporalControl"
     Shell.NavBarIsVisible="false"
 >
-    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <VerticalStackLayout>
         <Grid>
             <GraphicsView x:Name="QuadroView"
-                WidthRequest="50"
-                HeightRequest="50"
-             />
+            HeightRequest="200"
+            WidthRequest="200"
+
+            BackgroundColor="White"
+            />
         </Grid>
     </VerticalStackLayout>
 

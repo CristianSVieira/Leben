@@ -21,6 +21,11 @@ public partial class QuadroTemporalControl : ContentView {
         Inicializar();
     }
 
+    protected override void OnSizeAllocated(double width, double height)
+    {
+        base.OnSizeAllocated(width, height);
+    }
+
     public void Inicializar()
     {
         QuadroView.Drawable = _QuadroTemporalDrawable;

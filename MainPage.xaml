@@ -11,8 +11,7 @@
             Spacing="25"
             Margin="30"
 
-            VerticalOptions="FillAndExpand"
-            HorizontalOptions="FillAndExpand"
+
             >
 
             <controls:QuadroTemporalControl />
@@ -20,9 +19,6 @@
             <Frame BorderColor="White"
                 HasShadow="True"
                 CornerRadius="12"
-
-                VerticalOptions="FillAndExpand"
-                HorizontalOptions="FillAndExpand"
                 >
                 <Frame.Background>
                     <!-- StartPoint defaults to (0,0) -->

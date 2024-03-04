@@ -9,7 +9,7 @@ public class QuadroTemporalDrawable : IDrawable {
     private readonly QuadroTemporalControl _quadroTemporalControl;
     private readonly List<QuadroTemporalModel> _quadroTemporalModel;
 
-    double totalDeElementos = 1;
+    float totalDeElementos = 1;
     int linhas = 1;
     int columnas = 1;
 
@@ -28,10 +28,15 @@ public class QuadroTemporalDrawable : IDrawable {
 
         for (int i = 0; i <= columnas; i++) {
             canvas.FillColor = _quadroTemporalModel[i].Côr;
-            canvas.FillRectangle(50 / (float) totalDeElementos * i, 50 / (float) totalDeElementos * i, 100 / (float) totalDeElementos, 100 / (float) totalDeElementos);
+            canvas.FillRectangle(
+                100 * i,
+                0,
+                100 / columnas,
+                100 / columnas
+            );
         }
 
-        canvas.FillColor = Colors.White;
+
         //canvas.FillRectangle(50, 50, 100, 100);
 
         canvas.RestoreState();
