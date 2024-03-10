@@ -15,6 +15,9 @@ public partial class QuadroTemporalControl : ContentView {
             },
             new QuadroTemporalModel() {
                 Côr = Color.FromRgb(20, 10, 200),
+            },
+            new QuadroTemporalModel() {
+                Côr = Color.FromRgb(10, 200, 20),
             }
         });
 

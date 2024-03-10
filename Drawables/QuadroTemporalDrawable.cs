@@ -36,7 +36,6 @@ public class QuadroTemporalDrawable : IDrawable {
             );
         }
 
-
         //canvas.FillRectangle(50, 50, 100, 100);
 
         canvas.RestoreState();

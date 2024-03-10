@@ -6,30 +6,51 @@
              Shell.NavBarIsVisible="false"
              >
 
-        <StackLayout
-            Padding="30,0"
-            Spacing="25"
-            Margin="30"
+    <StackLayout
+    Margin="24"
 
+    HorizontalOptions="FillAndExpand"
+    VerticalOptions="FillAndExpand"
+    >
+        <Grid RowSpacing="10" ColumnSpacing="10"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        >
+            <Grid.RowDefinitions >
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions >
 
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0" Grid.Column="0" BorderColor="White"
+            HasShadow="True"
+            BackgroundColor="White"
             >
+            </Frame>
 
-            <controls:QuadroTemporalControl />
+            <Frame Grid.Row="0" Grid.Column="1" BorderColor="White"
+            HasShadow="True"
+            BackgroundColor="Blue"
+            >
+            </Frame>
 
-            <Frame BorderColor="White"
-                HasShadow="True"
-                CornerRadius="12"
-                >
+            <Frame Grid.Row="1" Grid.ColumnSpan="2" BorderColor="White"
+            HasShadow="True"
+            CornerRadius="12"
+            >
                 <Frame.Background>
-                    <!-- StartPoint defaults to (0,0) -->
                     <LinearGradientBrush EndPoint="1,0" >
-                        <GradientStop Color="Yellow"
-                                    Offset="0.5" />
-                        <GradientStop Color="Green"
-                                    Offset="0.5" />
+                        <GradientStop Color="Red"
+                                    Offset="0.1" />
+                        <GradientStop Color="Orange"
+                                    Offset="1.0" />
                     </LinearGradientBrush>
                 </Frame.Background>
             </Frame>
-        </StackLayout>
-
+        </Grid>
+    </StackLayout>
 </ContentPage>
