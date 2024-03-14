@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Leben.MainPage"
-             xmlns:controls="clr-namespace:Leben.Controls"
              Shell.NavBarIsVisible="false"
              >
 
@@ -26,7 +25,8 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <Frame Grid.Row="0" Grid.Column="0" BorderColor="White"
+            <Frame
+            Grid.Row="0" Grid.Column="0" BorderColor="White"
             HasShadow="True"
             BackgroundColor="White"
             >
@@ -38,11 +38,15 @@
             >
             </Frame>
 
-            <Frame Grid.Row="1" Grid.ColumnSpan="2" BorderColor="White"
+            <Frame Grid.Row="1" Grid.ColumnSpan="2" BorderColor="White" x:Name="Quadro"
             HasShadow="True"
             CornerRadius="12"
             >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ClickGestureRecognizer_Clicked"/>
+                </Frame.GestureRecognizers>
                 <Frame.Background>
+                    
                     <LinearGradientBrush EndPoint="1,0" >
                         <GradientStop Color="Red"
                                     Offset="0.1" />
