@@ -7,7 +7,7 @@
 
 
 
-    <Frame BackgroundColor="Blue" CornerRadius="12" x:Name="Contentor">
+    <Frame BackgroundColor="DeepPink" Padding="0" CornerRadius="12" x:Name="Contentor">
     </Frame>
 
 </ContentPage>
